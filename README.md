@@ -1,8 +1,13 @@
-# React + Vite
+Reset Password Functionality
+Overview
+The reset password functionality allows users to reset their passwords if they forget them. This process typically involves the following steps:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The user requests a password reset by providing their email address.
+An email is sent to the user with a link to reset their password.
+The user clicks the link, which takes them to a reset password form.
+The user enters a new password and submits the form to update their password.
+Implementation
+Step 1: Forgot Password Request
+The user navigates to the Forgot Password page.
+The user enters their email address and submits the request.
+An API call is made to the backend to send a reset password email.
